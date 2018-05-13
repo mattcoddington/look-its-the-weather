@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.panel-body {
+  margin: 0 !important;
+}
+
+.body-background {
+  background: #f9f9f9 url('../images/weather-map-background.png') round;
+  position: relative;
+  height: 360px;
+}
+
+.navbar {
+  background-color: #48355A;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+}
+
+.body-container {
+  max-width: 775px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}

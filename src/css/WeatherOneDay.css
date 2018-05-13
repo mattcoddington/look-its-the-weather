@@ -1,0 +1,32 @@
+.one-day-today-icon {
+  font-size: 5em;
+  color: #48355A;
+  margin-right: 16px;
+  min-width: 100px;
+}
+
+.one-day-summary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.what-day-is-it {
+  font-size: .85em;
+  text-transform: uppercase;
+}
+
+.today {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.tomorrow {
+  display: flex;
+}
+
+.one-day-temp-high {
+  font-size: 1.75em;
+  margin-top: -8px;
+  margin-bottom: 4px;
+}
