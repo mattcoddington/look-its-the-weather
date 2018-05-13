@@ -24,25 +24,15 @@ class WeatherFourDay extends Component {
         'selected-day'
       )
     } else {
-      console.log('dayIsSelected fucked up')
     }
   }
 
   render() {
 
-    const api = `http://api.wunderground.com/api/c7ad7faf45dd6e85/forecast/q/zmw:` + this.props.selectedAddress + `.json`;
-    console.log(this.props.forecastData);
-    console.log(this.state.requestFailed);
-
     if (this.state.requestFailed) return <p>Failed!</p>
     if (!this.props.forecastData) return <p>Getting your forecast...</p>
 
   let forecastDay = this.props.forecastData.forecast.simpleforecast.forecastday
-
-  console.log(forecastDay)
-  console.log(this.props.selectedDay)
-  console.log(this.props.selectedAddress)
-  console.log('API: ' + api)
 
 
     return (

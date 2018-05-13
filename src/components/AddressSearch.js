@@ -57,22 +57,15 @@ class AddressSearch extends Component {
       value: ''
     })
     this.props.selectAddress('');
-    console.log('Focus happened')
   }
 
   handleOnBlur = (e) => {
     this.setState({
       addressFocused: false
     })
-    console.log('blur has happened ')
   }
 
   render() {
-
-    console.log('Query: ' + this.state.query)
-    console.log(this.state.results)
-    console.log('Address focused: ' + this.state.addressFocused)
-    console.log('Selected address from props: ' + this.props.selectedAddress)
     return (
 
       <div>

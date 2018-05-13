@@ -6,8 +6,6 @@ import WeatherOneDay from './components/WeatherOneDay.js';
 import WeatherFourDay from './components/WeatherFourDay.js';
 import Footer from './components/Footer.js';
 
-require('dotenv').config()
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +35,6 @@ class App extends Component {
       this.setState({
         forecastData: d
       })
-      console.log('new forecastData')
     }, () => {
       this.setState({
         requestFailed: true
@@ -50,9 +47,6 @@ class App extends Component {
     this.setState({
       selectedAddress: zip
     })
-
-    console.log('You have selected an address');
-    console.log('This zmv: ' + zip);
   };
 
   selectCity = (city) => {
@@ -60,27 +54,19 @@ class App extends Component {
     this.setState({
       selectedCity: city
     })
-
-    console.log('You have selected a city');
-    console.log('This city: ' + city);
   };
 
   selectDay = (day) => {
     this.setState({
       selectedDay: day
     })
-    console.log('You ran selectDay')
   };
 
   render() {
 
-    console.log('api key: ' + process.env.REACT_APP_WU_API_KEY)
-
     return (
       <div className="body-background">
         <Header />
-
-      Hi: {process.env.REACT_APP_TEST} and {process.env.SECRET_KEY} and {process.env.NODE_ENV}
 
           <div className="body-container">
 

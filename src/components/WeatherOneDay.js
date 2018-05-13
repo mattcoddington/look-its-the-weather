@@ -51,9 +51,6 @@ class WeatherOneDay extends Component {
     let simpleForecastDay = this.props.forecastData.forecast.simpleforecast.forecastday
     let txtForecastDay = this.props.forecastData.forecast.txt_forecast.forecastday
 
-    console.log(this.props.forecastData)
-    console.log(this.simpleForecastDay)
-
     return (
         <div className="one-day-summary-container">
 
