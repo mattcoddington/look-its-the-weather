@@ -6,6 +6,8 @@ import WeatherOneDay from './components/WeatherOneDay.js';
 import WeatherFourDay from './components/WeatherFourDay.js';
 import Footer from './components/Footer.js';
 
+require('dotenv').config()
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +25,7 @@ class App extends Component {
   }
 
   fetchForecast = () => {
-    fetch(`http://api.wunderground.com/api/` + process.env.REACT_APP_WU_API_KEY + `/forecast/q/zmw:` + this.state.selectedAddress + `.json`)
+    fetch(`http://api.wunderground.com/api/c7ad7faf45dd6e85/forecast/q/zmw:` + this.state.selectedAddress + `.json`)
     .then(response => {
       if (!response.ok) {
         throw Error("Something went wrong")
@@ -78,7 +80,7 @@ class App extends Component {
       <div className="body-background">
         <Header />
 
-      {process.env.REACT_APP_WU_API_KEY}
+      Hi: {process.env.REACT_APP_TEST} and {process.env.SECRET_KEY} and {process.env.NODE_ENV}
 
           <div className="body-container">
 
