@@ -17,7 +17,7 @@ class AddressSearch extends Component {
   }
 
   getInfo = () => {
-    axios.get(`http://thingproxy.freeboard.io/fetch/http://autocomplete.wunderground.com/aq?query=${this.state.query}`)
+    axios.get(`https://thingproxy.freeboard.io/fetch/http://autocomplete.wunderground.com/aq?query=${this.state.query}`)
       .then(({ data }) => {
         this.setState({
           results: data.RESULTS

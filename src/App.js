@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   fetchForecast = () => {
-    fetch(`http://api.wunderground.com/api/c7ad7faf45dd6e85/forecast/q/zmw:` + this.state.selectedAddress + `.json`)
+    fetch(`https://thingproxy.freeboard.io/fetch/http://api.wunderground.com/api/c7ad7faf45dd6e85/forecast/q/zmw:` + this.state.selectedAddress + `.json`)
     .then(response => {
       if (!response.ok) {
         throw Error("Something went wrong")
