@@ -8,8 +8,10 @@ class Footer extends Component {
     <div className="footer-container">
 
       <hr />
-
-    <a href="http://www.matthewcoddington.com"><img src={MC} alt="App designed and developed by Matt Coddington"/></a>
+      <div className="footer-copyrights">
+        <div><a href="http://www.matthewcoddington.com"><img src={MC} alt="App designed and developed by Matt Coddington"/></a></div>
+        <div>Weather icons by <a href="http://erikflowers.github.io/weather-icons/">Erik Flowers</a></div>
+      </div>
 
     </div>
 
